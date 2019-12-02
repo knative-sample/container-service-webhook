@@ -2,12 +2,12 @@
 apiVersion: serving.knative.dev/v1alpha1
 kind: Service
 metadata:
-  name: deployer-github-trigger
+  name: cs-demo
 spec:
   template:
     spec:
       containers:
-      - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/deployer-trigger:v1_74647e3a-20190806093544
+      - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/deployer-trigger:v2_31f667ae-20191202200708
         args:
           - --trigger-config=/app/config/deployer-trigger.yaml
         volumeMounts:

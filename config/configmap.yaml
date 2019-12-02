@@ -18,9 +18,9 @@ data:
             name: container-service-webhook-git
       params:
         - name: pathToContext
-          value: "src"
+          value: "knative"
         - name: pathToYamlFile
-          value: ""
+          value: "knative/cs-go.yaml"
         - name: imageUrl
           value: "registry.cn-hangzhou.aliyuncs.com/knative-sample/deployer-trigger"
         - name: imageTag

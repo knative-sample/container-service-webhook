@@ -17,9 +17,9 @@ spec:
     - name: imageTag
       description: Tag to apply to the built image
   tasks:
-  - name: image-to-deploy
+  - name: deploy-using-kubectl
     taskRef:
-      name: image-to-deploy
+      name: deploy-using-kubectl
     params:
       - name: pathToYamlFile
         value: "$(params.pathToYamlFile)"
