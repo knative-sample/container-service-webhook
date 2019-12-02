@@ -20,7 +20,7 @@ data:
         - name: pathToContext
           value: "knative"
         - name: pathToYamlFile
-          value: "knative/cs-go.yaml"
+          value: "knative/helloworld-go.yaml"
         - name: imageUrl
           value: "registry.cn-hangzhou.aliyuncs.com/knative-sample/deployer-trigger"
         - name: imageTag
