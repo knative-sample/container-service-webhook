@@ -17,12 +17,10 @@ data:
           resourceRef:
             name: container-service-webhook-git
       params:
-        - name: pathToContext
-          value: "knative"
         - name: pathToYamlFile
-          value: "knative/helloworld-go.yaml"
+          value: "knative/cs-go.yaml"
         - name: imageUrl
           value: "registry.cn-hangzhou.aliyuncs.com/knative-sample/deployer-trigger"
         - name: imageTag
-          value: "1.0"
+          value: ""
       serviceAccount: tekton
