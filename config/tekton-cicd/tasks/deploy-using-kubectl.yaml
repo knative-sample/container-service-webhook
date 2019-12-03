@@ -2,6 +2,8 @@ apiVersion: tekton.dev/v1alpha1
 kind: Task
 metadata:
   name: deploy-using-kubectl
+  annotations:
+    sidecar.istio.io/inject: "false"
 spec:
   inputs:
     resources:
