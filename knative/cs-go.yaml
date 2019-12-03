@@ -2,11 +2,12 @@ apiVersion: serving.knative.dev/v1alpha1
 kind: Service
 metadata:
   name: cs-go-demo
-  namespace: default
 spec:
-  runLatest:
-    configuration:
-      revisionTemplate:
-        spec:
-          container:
-            image: __IMAGE__
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: '100'
+        autoscaling.knative.dev/minScale: '1'
+    spec:
+      containers:
+      - image: __IMAGE__
