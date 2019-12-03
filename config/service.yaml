@@ -5,6 +5,10 @@ metadata:
   name: cs-demo
 spec:
   template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: '100'
+        autoscaling.knative.dev/minScale: '1'
     spec:
       containers:
       - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/container-service-webhook:master_40aab7d0-20191203094729
