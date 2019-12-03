@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/deployer-trigger:v2_31f667ae-20191202200708
+      - image: registry.cn-hangzhou.aliyuncs.com/knative-sample/container-service-webhook:master_40aab7d0-20191203094729
         args:
           - --trigger-config=/app/config/deployer-trigger.yaml
         volumeMounts:

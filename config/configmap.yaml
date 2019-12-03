@@ -20,7 +20,7 @@ data:
         - name: pathToYamlFile
           value: "knative/cs-go.yaml"
         - name: imageUrl
-          value: "registry.cn-hangzhou.aliyuncs.com/knative-sample/deployer-trigger"
+          value: "registry.cn-hangzhou.aliyuncs.com/knative-sample/helloworld-go"
         - name: imageTag
           value: ""
       serviceAccount: tekton
